@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%sveltekit.head%
+</head>
+
+
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
+
+
+<style>
+	:root {
+		--primary: #63D6AD;
+		--bg-color: #2B2936;
+		--light: #ffffff;
+	}
+
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+	}
+
+	body {
+		background-color: #2B2936;
+		font-family: Arial, Helvetica, sans-serif;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	main {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    padding: 5rem 2rem;
+  }
+</style>
