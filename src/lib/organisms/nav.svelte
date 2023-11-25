@@ -1,6 +1,6 @@
 <script>
   import NavLink from "$lib/atoms/nav-link.svelte";
-  import LinkButton from "$lib/atoms/Link-button.svelte";
+  import LinkButton from "$lib/atoms/link-button.svelte";
   import Logo from "$lib/atoms/logo.svelte";
 </script>
 
