@@ -1,15 +1,12 @@
 <script>
-  //   window.addEventListener(`load`, () => {
-  //     const year = document.getElementById(`CurrentYear`);
-  //     let date = new Date();
-  //     year.innerHTML = date.getFullYear();
-  //   });
+       let date = new Date();
+       export let year = date.getFullYear();
 </script>
 
 <div class="container">
   <footer>
     <p>
-      © Copyright 2023 - <span id="CurrentYear">2023</span> Sascha Davidson
+      © Copyright 2023 - <span id="CurrentYear">{year}</span> Sascha Davidson
     </p>
   </footer>
 </div>
