@@ -80,6 +80,17 @@
     a{
         height: fit-content;
         padding: .5rem;
+        border-bottom: 3px solid var(--secondary);
+        transition: all .3s ease-in-out;
+    }
+
+    a:hover,
+    a:focus,
+    a:hover .logo,
+    a:focus .logo{
+      border-bottom: 3px solid var(--primary);
+      fill: var(--primary);
+
     }
 
   svg {
@@ -88,6 +99,8 @@
 
   .logo {
     fill: var(--light);
+    transition: all .3s ease-in-out;
+
   }
 
   .logo-hard{

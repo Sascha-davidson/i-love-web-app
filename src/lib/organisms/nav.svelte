@@ -4,35 +4,44 @@
   import Logo from "$lib/atoms/logo.svelte";
 </script>
 
-<nav>
-  <Logo LinkRoute="/" />
+<div class="container">
+  <nav>
+    <Logo LinkRoute="/" />
 
-  <ul>
-    <li><NavLink LinkRoute="/" LinkText="Home" /></li>
-    <li><NavLink LinkRoute="/blogs" LinkText="Blogs" /></li>
-    <li>
-      <LinkButton
-        LinkRoute="https://www.saschadavidson.nl"
-        LinkText="Portfolio Website"
-      />
-    </li>
-  </ul>
-</nav>
+    <ul>
+      <li><NavLink LinkRoute="/" LinkText="Home" /></li>
+      <li><NavLink LinkRoute="/blogs" LinkText="Blogs" /></li>
+      <li>
+        <LinkButton
+          LinkRoute="https://www.saschadavidson.nl"
+          LinkText="Portfolio Website"
+        />
+      </li>
+    </ul>
+  </nav>
+</div>
 
 <style>
+  .container {
+    box-shadow: 0px -13px 16px 15px var(--primary);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
-}
+    max-width: 1200px;
+  }
 
-ul{
+  ul {
     display: flex;
     gap: 1rem;
     height: 100%;
-}
+  }
 
   li {
     list-style-type: none;

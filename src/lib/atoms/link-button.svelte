@@ -13,14 +13,15 @@
         background-color: var(--primary);
         text-decoration: none;
         border: 3px solid var(--primary);
-        color: var(--bg-color);
+        color: var(--secondary);
         border-radius: 50rem;
         transition: all .3s ease-in-out;
     }
 
-    a:hover{
+    a:hover,
+    a:focus{
         border: 3px solid var(--primary);
         color: var(--primary);
-        background-color: var(--bg-color);
+        background-color: unset;
     }
 </style>

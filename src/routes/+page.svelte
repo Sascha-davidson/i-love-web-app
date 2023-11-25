@@ -1,43 +1,34 @@
 <script>
-  import Nav from "$lib/organisms/nav.svelte";
-  import Footer from "$lib/organisms/footer.svelte";
   import Caracel from "$lib/organisms/caracel.svelte";
-  import Title from "$lib/atoms/h2-title.svelte"
+  import Title from "$lib/atoms/h1-title.svelte";
+  import FeaturedBlog from "$lib/modules/featured-blog.svelte";
 </script>
 
-<div class="container box-shadow">
-  <Nav />
-</div>
-
-  <main>
-    <section>
-      <div><Title TitleText="I Love Web" /></div>
-      <article><Title TitleText="featured blog" /></article>
-    </section>
-
-    <Caracel />
-    
-  </main>
-
-<div class="container footer">
-  <Footer />
-</div>
+<main>
+  <section>
+    <div class="introduction">
+      <Title TitleText="I Love Web" />
+      <p>Introduction text</p>
+    </div>
+    <article class="introduction">
+      <FeaturedBlog
+        LinkRoute="/"
+        TitleText="Hallo"
+        Naam="Sascha Davidson"
+        Content="Sascha is cool"
+      />
+    </article>
+  </section>
+  <Caracel TitleText="Nieuweste blogs" />
+</main>
 
 <style>
-  .container {
+  section {
     display: flex;
-    padding: 0 2rem;
-    justify-content: center;
+    gap: 2rem;
+  }
+
+  .introduction {
     width: 100%;
   }
-
-  .box-shadow {
-    box-shadow: 0px -8px 16px 10px #000;
-  }
-
-  .footer{
-    background-color: #1E1C25;
-  }
-
-
 </style>

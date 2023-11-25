@@ -7,10 +7,11 @@
 </script>
 
 <a href={LinkRoute}>
-  <img src="image-155.png" alt="blablabla">
+  <img src="image-155.png" alt="" />
   <Title {TitleText} />
-  <!-- <PresentationBy Naam="{Naam}" /> -->
+  <!-- <PresentationBy {Naam} /> -->
   <BlogContent {Content} />
+  <span>Featured</span>
 </a>
 
 <style>
@@ -18,8 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 25rem;
-    aspect-ratio: 10/7;
+    aspect-ratio: 10/6;
     padding: 1rem 2rem;
     border-radius: 1rem;
     text-decoration: none;
@@ -34,9 +34,20 @@
   a:focus {
     background-color: var(--bg-block-hover);
     padding: 2rem;
+
   }
 
-  img{
+  span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary);
+    border-radius: 0 0 0 1rem;
+    color: var(--secondary);
+  }
+
+  img {
     position: absolute;
     border-radius: 2rem;
     top: 0;
@@ -44,8 +55,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .5;
-    transition: .2s linear;
+    opacity: 0.5;
+    transition: 0.2s linear;
     z-index: -1;
   }
 
@@ -53,6 +64,5 @@
   a:focus img {
     opacity: 1;
     scale: 1.1;
-
   }
 </style>

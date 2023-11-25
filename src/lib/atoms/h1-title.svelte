@@ -1,14 +1,14 @@
 <script>
-    export let TitleText
+    export let TitleText;
 </script>
 
-<h3>
+<h1>
     {TitleText}
-</h3>
+</h1>
 
 <style>
-    h3{
-        font-size: 2rem;
+    h1{
+        font-size: 3rem;
         font-weight: 500;
     }
 </style>
