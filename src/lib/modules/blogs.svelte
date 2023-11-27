@@ -18,7 +18,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    width: 25rem;
+    width: 100%;
     aspect-ratio: 10/7;
     padding: 1rem 2rem;
     border-radius: 1rem;

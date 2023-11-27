@@ -1,5 +1,5 @@
 <script>
-  import Caracel from "$lib/organisms/caracel.svelte";
+  import Caracel from "$lib/organisms/caracal.svelte";
   import Title from "$lib/atoms/h1-title.svelte";
   import FeaturedBlog from "$lib/modules/featured-blog.svelte";
 </script>

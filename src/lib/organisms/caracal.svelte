@@ -65,29 +65,36 @@
   section {
     padding: 3rem 0;
   }
+
+  article{
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.5rem 0 2rem 0;  }
+
   ul {
     display: flex;
     gap: 2rem;
-    overflow-x: scroll;
-    padding: 0.5rem 0 2rem 0;
+    width: max-content;
+
   }
 
   li {
     list-style-type: none;
+    width: 25rem;
   }
 
-  ul::-webkit-scrollbar-track {
+  article::-webkit-scrollbar-track {
     /* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     border-radius: 10px;
     background-color: none;
   }
 
-  ul::-webkit-scrollbar {
+  article::-webkit-scrollbar {
     width: 12px;
     background-color: none;
   }
 
-  ul::-webkit-scrollbar-thumb {
+  article::-webkit-scrollbar-thumb {
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: var(--primary);
