@@ -1,5 +1,5 @@
 <script>
-  import Caracel from "$lib/organisms/caracal.svelte";
+  import Carousel from "$lib/organisms/carousel.svelte";
   import Title from "$lib/atoms/h1-title.svelte";
   import FeaturedBlog from "$lib/modules/featured-blog.svelte";
 </script>
@@ -19,7 +19,7 @@
       />
     </article>
   </section>
-  <Caracel TitleText="Nieuweste blogs" />
+  <Carousel TitleText="Nieuweste blogs" />
 </main>
 
 <style>

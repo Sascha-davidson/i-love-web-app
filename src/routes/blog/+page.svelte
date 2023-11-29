@@ -1,6 +1,6 @@
 <script>
   import Footer from "$lib/organisms/footer.svelte";
-  import Caracel from "$lib/organisms/caracal.svelte";
+  import Carousel from "$lib/organisms/carousel.svelte";
 
   import Title from "$lib/atoms/h3-title.svelte";
   import PresentationBy from "$lib/atoms/presentation-by.svelte";
@@ -17,7 +17,7 @@
     </section>
   </article>
 
-  <Caracel TitleText="Meer blogs" />
+  <Carousel TitleText="Meer blogs" />
 </main>
 
 <style>
