@@ -68,7 +68,18 @@
 <style>
   .blogs {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2rem;
+  }
+  @media screen and (min-width: 600px) {
+    .blogs {
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .blogs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
   }
 </style>
