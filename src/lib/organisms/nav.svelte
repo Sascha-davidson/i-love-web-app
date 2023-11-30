@@ -90,7 +90,8 @@
     flex-direction: column;
     gap: 1rem;
     right: 0;
-    bottom: 0;
+    top: 0;
+    transform: translateY(-100%);
     background-color: var(--primary);
     z-index: 2;
     border-radius: 0 0 10px 10px;
@@ -102,6 +103,8 @@
   .UlActive {
     bottom: unset;
     top: 100%;
+    transform: translateY( 0);
+
   }
 
   li {
@@ -122,6 +125,8 @@
       background-color: unset;
       padding: unset;
       width: unset;
+      transform: translateY(0);
+
     }
   }
 </style>
