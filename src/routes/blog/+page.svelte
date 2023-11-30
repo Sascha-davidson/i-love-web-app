@@ -7,18 +7,20 @@
   import BlogContent from "$lib/atoms/blog-content.svelte";
 </script>
 
-<main>
-  <article>
-    <img src="" alt="" />
-    <section>
-      <Title TitleText="My blog" />
-      <PresentationBy Naam="Krijn" />
-      <BlogContent Content="component zijn over complicated" />
-    </section>
-  </article>
+<div class="content-grid">
+  <main class="content">
+    <article>
+      <img src="" alt="" />
+      <section>
+        <Title TitleText="My blog" />
+        <PresentationBy Naam="Krijn" />
+        <BlogContent Content="component zijn over complicated" />
+      </section>
+    </article>
 
-  <Carousel TitleText="Meer blogs" />
-</main>
+    <Carousel TitleText="Meer blogs" />
+  </main>
+</div>
 
 <style>
   article {

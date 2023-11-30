@@ -80,7 +80,7 @@
 
   li {
     list-style-type: none;
-    width: 25rem;
+    width: calc(100vw - 3rem);
   }
 
   article::-webkit-scrollbar-track {
@@ -98,5 +98,11 @@
     border-radius: 10px;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     background-color: var(--primary);
+  }
+
+  @media screen and (min-width: 450px) {
+    li {
+    width: 25rem;
+  }
   }
 </style>

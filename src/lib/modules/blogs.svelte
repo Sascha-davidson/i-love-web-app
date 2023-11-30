@@ -7,7 +7,7 @@
 </script>
 
 <a href={LinkRoute}>
-  <img src="image-155.png" alt="blablabla">
+  <img src="image-155.png" alt="blablabla" />
   <Title {TitleText} />
   <!-- <PresentationBy Naam="{Naam}" /> -->
   <BlogContent {Content} />
@@ -19,7 +19,7 @@
     flex-direction: column;
     justify-content: flex-end;
     width: 100%;
-    aspect-ratio: 10/7;
+    aspect-ratio: 10/9;
     padding: 1rem 2rem;
     border-radius: 1rem;
     text-decoration: none;
@@ -36,7 +36,7 @@
     padding: 2rem;
   }
 
-  img{
+  img {
     position: absolute;
     border-radius: 2rem;
     top: 0;
@@ -44,8 +44,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: .5;
-    transition: .2s linear;
+    opacity: 0.5;
+    transition: 0.2s linear;
     z-index: -1;
   }
 
@@ -53,6 +53,11 @@
   a:focus img {
     opacity: 1;
     scale: 1.1;
+  }
 
+  @media screen and (min-width: 500px) {
+    a {
+      aspect-ratio: 10/7;
+    }
   }
 </style>

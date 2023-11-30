@@ -79,7 +79,7 @@
 <style>
     a{
         height: fit-content;
-        padding: .5rem;
+        padding: .5rem 0;
         border-bottom: 3px solid var(--secondary);
         transition: all .3s ease-in-out;
     }

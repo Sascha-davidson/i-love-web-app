@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    aspect-ratio: 10/6;
+    aspect-ratio: 10/9;
     padding: 1rem 2rem;
     border-radius: 1rem;
     text-decoration: none;
@@ -34,7 +34,6 @@
   a:focus {
     background-color: var(--bg-block-hover);
     padding: 2rem;
-
   }
 
   span {
@@ -64,5 +63,11 @@
   a:focus img {
     opacity: 1;
     scale: 1.1;
+  }
+
+  @media screen and (min-width: 500px) {
+    a {
+      aspect-ratio: 10/7;
+    }
   }
 </style>

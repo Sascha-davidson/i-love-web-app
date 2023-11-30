@@ -3,65 +3,67 @@
   import Blogs from "$lib/modules/blogs.svelte";
 </script>
 
-<main>
-  pagetitle
-  <section class="blogs">
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-    <Blogs
-      LinkRoute="/"
-      TitleText="Test"
-      Naam="Sascha Davidson"
-      Content="bla bla bla"
-    />
-  </section>
-</main>
+<div class="content-grid">
+  <main class="content">
+    pagetitle
+    <section class="blogs">
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+      <Blogs
+        LinkRoute="/"
+        TitleText="Test"
+        Naam="Sascha Davidson"
+        Content="bla bla bla"
+      />
+    </section>
+  </main>
+</div>
 
 <style>
   .blogs {
