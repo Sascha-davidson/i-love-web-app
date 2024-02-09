@@ -1,6 +1,6 @@
 :root {
   --primary: #63d6ad;
-  --secondary: #020215;
+  --background-color: #020202;
   --light: #fff;
   --dark: #000;
   --box-shadow: 0px 4px 4px 0px #000;
@@ -12,26 +12,46 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+
+}
+
 body {
-  background-color: var(--secondary);
+  background-color: var(--background-color);
   font-family: Arial, Helvetica, sans-serif;
   min-height: 100vh;
   color: var(--light);
   line-height: 1.5;
 }
 
-body .content-grid {
+body > div,
+.page-grid {
   display: grid;
-  grid-template-columns: [page-start] auto [break-start] 1.5rem [content-start] 1fr [content-end] 1.5rem [break-end] auto [page-end];
+  grid-template-columns: [page-start] auto [break-start] minmax(1.5rem, 5%) [content-start] 1fr [content-end] minmax(1.5rem, 5%) [break-end] auto [page-end];
   grid-column: page;
 }
 
-body .content-grid > * {
-  grid-column: page;
+.break-grid {
+  grid-column: break;
+  height: fit-content;
 }
 
-body .content {
+.content-grid {
   grid-column: content;
+  height: fit-content;
+}
+
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: black;
+  background: #76ff8c;
+}
+
+::selection {
+  color: black;
+  background: #76ff8c;
 }
 
 main {
@@ -40,8 +60,9 @@ main {
   overflow: hidden;
 }
 
-@media screen and (min-width: 1200px) {
-    body .content-grid {
-        grid-template-columns: [page-start] auto [break-start] 1.5rem [content-start] 1200px [content-end] 1.5rem [break-end] auto [page-end];
-    }
+@media screen and (min-width: 1360px) {
+  body > div,
+  .page-grid {
+    grid-template-columns: [page-start] auto [break-start] 5rem [content-start] 1200px [content-end] 5rem [break-end] auto [page-end];
+  }
 }

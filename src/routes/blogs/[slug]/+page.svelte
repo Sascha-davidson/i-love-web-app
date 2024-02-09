@@ -5,10 +5,13 @@
   import Title from "$lib/atoms/h3-title.svelte";
   import PresentationBy from "$lib/atoms/presentation-by.svelte";
   import BlogContent from "$lib/atoms/blog-content.svelte";
+  import Nav2 from "$lib/organisms/nav2.svelte";
+
 </script>
 
-<div class="content-grid">
-  <main class="content">
+<Nav2 severity="secondary" />
+<div class="page-grid">
+  <main class="content-grid">
     <article>
       <img src="" alt="" />
       <section>

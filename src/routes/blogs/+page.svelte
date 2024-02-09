@@ -1,85 +1,51 @@
 <script>
   import Footer from "$lib/organisms/footer.svelte";
-  import Blogs from "$lib/modules/blogs.svelte";
+  import Carousel from "$lib/organisms/carousel.svelte";
+
+  import Title from "$lib/atoms/h3-title.svelte";
+  import PresentationBy from "$lib/atoms/presentation-by.svelte";
+  import BlogContent from "$lib/atoms/blog-content.svelte";
+  import Nav2 from "$lib/organisms/nav2.svelte";
+
 </script>
 
-<div class="content-grid">
-  <main class="content">
-    pagetitle
-    <section class="blogs">
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-      <Blogs
-        LinkRoute="/"
-        TitleText="Test"
-        Naam="Sascha Davidson"
-        Content="bla bla bla"
-      />
-    </section>
+<Nav2 severity="secondary" />
+<div class="page-grid">
+  <main class="content-grid">
+    <article>
+      <img src="" alt="" />
+      <section>
+        <Title TitleText="My blog" />
+        <PresentationBy Naam="Krijn" />
+        <BlogContent Content="component zijn over complicated" />
+      </section>
+    </article>
+
+    <Carousel TitleText="Meer blogs" />
   </main>
 </div>
 
 <style>
-  .blogs {
-    display: grid;
-    grid-template-columns: 1fr;
+  article {
+    display: flex;
     gap: 2rem;
-  }
-  @media screen and (min-width: 600px) {
-    .blogs {
-    grid-template-columns: 1fr 1fr;
-  }
+    padding: 2rem;
+    background-color: var(--bg-block);
+    border-radius: 1rem;
+    box-shadow: var(--box-shadow);
   }
 
-  @media screen and (min-width: 1000px) {
-    .blogs {
-    grid-template-columns: 1fr 1fr 1fr;
+  img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 0.5rem;
   }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
   }
 </style>
