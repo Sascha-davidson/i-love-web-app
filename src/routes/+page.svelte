@@ -33,7 +33,7 @@
   });
 </script>
 
-<h1 style="position: absolute; top: 2rem; padding: 2rem; background: red; left: 50%; transform:translateX(-50%); font-size: 3rem; border-radius: .5rem;">STILL UNDER CONSTRUCTION</h1>
+<h1 style="position: absolute; top: 2rem; padding: 2rem; background: red; left: 50%; transform:translateX(-50%); font-size: 2rem; border-radius: .5rem; line-height:normal;">STILL UNDER CONSTRUCTION</h1>
 
 <canvas id="canvas1"></canvas>
 <header class="content-grid">
