@@ -118,6 +118,7 @@
     align-items: center;
     transition: padding 0.3s ease-in-out;
     padding: 2rem 0%;
+    z-index: 2;
 
     position: sticky;
     top: 0;
@@ -134,7 +135,13 @@
 
   .invisible {
     grid-template-rows: auto;
-    row-gap: unset;
+    padding-bottom: 0;
+  }
+
+  .invisible form{
+    height: 0;
+    opacity: 0;
+
   }
 
   nav > div {
