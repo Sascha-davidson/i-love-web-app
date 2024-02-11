@@ -33,7 +33,7 @@
   });
 </script>
 
-<h1 style="position: absolute; top: 2rem; padding: 2rem; background: red; left: 50%; transform:translateX(-50%); font-size: 2rem; border-radius: .5rem; line-height:normal;">STILL UNDER CONSTRUCTION</h1>
+<h1 style="position: absolute; top: 2rem; padding: 2rem; background: red; left: 50%; transform:translateX(-50%); font-size: 1.5rem; border-radius: .5rem; line-height:normal;">UNDER CONSTRUCTION</h1>
 
 <canvas id="canvas1"></canvas>
 <header class="content-grid">
@@ -194,10 +194,9 @@
 
   .nav-container {
     background-color: #000000;
-    background: rgb(0, 0, 0);
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 4;
   }
 
   main {

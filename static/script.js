@@ -34,5 +34,14 @@ window.addEventListener("mousemove", (ev) => {
   });
 });
 
+const nav = document.querySelector("nav");
+const navHeight = nav.offsetHeight;
+const footer = document.querySelector("footer") 
 
 
+if (nav) {
+  footer.style.height = navHeight + "px";
+}
+console.log(nav)
+console.log(navHeight)
+console.log(footer) 

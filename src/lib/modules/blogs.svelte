@@ -57,10 +57,10 @@
     top: 0;
     opacity: 0;
     left: 0;
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    background: hsl(130, 80%, 60%, 0.5);
+    background: hsl(130, 80%, 60%, 1);
     transition: all 300ms ease-in-out;
   }
 
@@ -73,6 +73,7 @@
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    
   }
 
   img {
@@ -84,6 +85,10 @@
     opacity: 0.5;
     transition: 0.2s linear;
     z-index: -1;
+  }
+
+  a img{
+    opacity: 1;
   }
 
   /* 
