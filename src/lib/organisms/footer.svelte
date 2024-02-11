@@ -15,43 +15,38 @@
 
 <style>
   footer {
-    padding: 1rem 0;
-    color: var(--secondary);
-  }
-
-  footer {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    padding:  0 ; /* Adjust the padding as needed */
-    color: white; /* Adjust text color as needed */
+    padding: 0.5rem;
+    color: white;
     z-index: 3;
     display: flex;
     align-items: center;
-    padding: .5rem;
-
+    /* background-color: black; Adjust background color as needed */
   }
 
-input{
-  display: none;
-}
+  input {
+    display: none;
+  }
 
-input:checked ~ label{
-  width: 100%;
-}
+  input:checked ~ label {
+    width: 100%;
+    overflow: auto;
+
+  }
 
   label {
     width: 48px;
     overflow: hidden;
     white-space: nowrap;
-    transition: all .5s ease-in-out;
-    top: 50%;
+    transition: width 0.5s ease-in-out;
     display: flex;
-    background-color: black;
-    border: 2px solid hsl(130, 100%, 73%);;
-    border-radius: .6rem;
+    border: 2px solid hsl(130, 100%, 73%);
+    border-radius: 0.6rem;
     align-items: center;
+    background-color: black;
   }
 
   label > span:first-child {
@@ -62,40 +57,23 @@ input:checked ~ label{
     width: 48px;
     height: 48px;
     font-size: 1.5rem;
-
   }
 
   label > span:nth-child(2) {
     padding: 0 1.5rem 0 0;
     font-size: 1rem;
-
   }
 
-  /* p > span:nth-child(2) {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    width: 0;
-    transition: width 0.5s;
-  } */
-
-  label:hover {
-    width: 100%;
-  }
-
-  @media (min-width: 500px){
+  @media (min-width: 500px) {
     footer {
-    background-color: unset;
-    padding: 2rem;
+      background-color: unset;
+      padding: 2rem;
+    }
 
-  }
+    input:checked ~ label {
+      width: 360px;
+      overflow: hidden;
 
-  label:is(:hover, :focus) {
-    width: 360px;
-  }
-
-  input:checked ~ label{
-    width: 360px;
-}
+    }
   }
 </style>
