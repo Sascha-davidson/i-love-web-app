@@ -47,7 +47,6 @@
     border-radius: 0.6rem;
     align-items: center;
     background-color: black;
-    cursor: pointer;
   }
 
   label > span:first-child {
@@ -58,11 +57,14 @@
     width: 48px;
     height: 48px;
     font-size: 1.5rem;
+    cursor: pointer;
+
   }
 
   label > span:nth-child(2) {
     padding: 0 1.5rem 0 0;
     font-size: 1rem;
+    cursor: text;
   }
 
   @media (min-width: 500px) {
