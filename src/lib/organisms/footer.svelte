@@ -47,6 +47,7 @@
     border-radius: 0.6rem;
     align-items: center;
     background-color: black;
+    cursor: pointer;
   }
 
   label > span:first-child {
