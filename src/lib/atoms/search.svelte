@@ -12,7 +12,7 @@
     required
   />
   <label for="search">Zoeken</label>
-  <button type="submit">
+  <button type="submit" aria-label="zoeken">
     <svg
       width="18"
       height="18"

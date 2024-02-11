@@ -67,7 +67,7 @@
 
   <Search />
 
-  <a href="https://www.linkedin.com/in/sascha-davidson-7293921a3/" class="linkedin" aria-label="Linkedin">
+  <a href="https://www.linkedin.com/in/sascha-davidson-7293921a3/" class="linkedin" target="_blank" rel="Linkedin" aria-label="Linkedin">
     <svg
       width="24"
       height="24"
@@ -81,7 +81,7 @@
     </svg>
   </a>
 
-  <a href="https://github.com/Sascha-davidson" class="github" aria-label="Github">
+  <a href="https://github.com/Sascha-davidson" class="github" target="_blank" rel="Github" aria-label="Github">
     <svg
       width="24"
       height="24"
