@@ -41,7 +41,13 @@
 
 <canvas id="canvas1"></canvas>
 <header class="content-grid">
-  <h1>I ❤ web</h1>
+  <h1>
+    I 
+    <svg width="244" height="224" viewBox="0 0 244 224" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M122 224L104.31 207.887C41.48 150.88 0 113.16 0 67.139C0 29.4191 29.524 0 67.1 0C88.328 0 108.702 9.88774 122 25.3907C135.298 9.88774 155.672 0 176.9 0C214.476 0 244 29.4191 244 67.139C244 113.16 202.52 150.88 139.69 207.887L122 224Z" fill="black"/>
+    </svg>  
+    web
+  </h1>
 </header>
 <div id="blogs" class="page-grid nav-container">
   <Nav2 id="Nav" logoRouting="/#blogs" />
@@ -187,11 +193,9 @@
     text-transform: uppercase;
     font-weight: 800;
     color: black;
-    /* margin-bottom: -3%; */
     grid-column: content;
-    line-height: 60%;
-
-    /* -webkit-text-stroke: 8px rgb(165, 165, 165); width and color */
+    transform: translateY(10%);
+    line-height: 0;
   }
 
   .nav-container {
@@ -205,5 +209,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
+  }
+
+  svg{
+    width: 20%;
+    height: auto;
   }
 </style>

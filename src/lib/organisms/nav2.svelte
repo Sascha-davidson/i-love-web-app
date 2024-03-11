@@ -138,12 +138,6 @@
     padding-bottom: 0;
   }
 
-  .invisible form{
-    height: 0;
-    opacity: 0;
-
-  }
-
   nav > div {
     display: flex;
     justify-content: flex-end;
@@ -155,21 +149,21 @@
     justify-content: center;
     height: 100%;
     max-height: 44.8px;
-    border: 2px solid white;
+    border: var(--light-border);
     border-radius: 0.6rem;
     outline: none;
   }
 
   a:is(:hover, :focus) {
-    border: 2px solid hsl(130, 100%, 73%);
+    border: var(--primary-hover-border);
   }
 
   a:is(:hover, :focus) svg {
-    fill: hsl(130, 100%, 73%);
+    fill: var(--primary-color);
   }
 
   svg {
-    fill: white;
+    fill: var(--light-color);
     height: 100%;
     width: auto;
   }

@@ -1,9 +1,23 @@
 :root {
-  --primary: #63d6ad;
-  --background-color: #020202;
-  --light: #fff;
-  --dark: #000;
-  --box-shadow: 0px 4px 4px 0px #000;
+  /* color */
+  --primary-color: #76ff8c;
+  --light-color: #F2F2F2;
+  --dark-color: #020202;
+  --background-color: var(--dark-color);
+
+  /* hover color */
+  --primary-hover-color: #02B31E;
+
+  /* border */
+  --primary-border: 2px solid var(--light-color);
+  --light-border: 2px solid var(--light-color);
+
+    /* hover border */
+    --primary-hover-border: 2px solid var(--primary-color);
+    --light-hover-border: 2px solid var(--light-color);
+
+  /* shadow */
+  --box-shadow: 0px 4px 4px 0px #020202;
 }
 
 * {
@@ -12,7 +26,7 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 
 }
@@ -20,13 +34,13 @@ html{
 body {
   background-color: var(--background-color);
   background-color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   min-height: 100vh;
   color: var(--light);
   line-height: 1.5;
 }
 
-body > div,
+body>div,
 .page-grid {
   display: grid;
   grid-template-columns: [page-start] auto [break-start] minmax(1.5rem, 5%) [content-start] 1fr [content-end] minmax(1.5rem, 5%) [break-end] auto [page-end];
@@ -62,7 +76,8 @@ main {
 }
 
 @media screen and (min-width: 1360px) {
-  body > div,
+
+  body>div,
   .page-grid {
     grid-template-columns: [page-start] auto [break-start] 5rem [content-start] 1200px [content-end] 5rem [break-end] auto [page-end];
   }

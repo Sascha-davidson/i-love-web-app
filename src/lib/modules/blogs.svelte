@@ -11,7 +11,7 @@
 
 <a class="card" href={LinkRoute}>
   <div class="inner">
-    <img src="image-155.png" alt="blablabla" />
+    <img src="Images/image/image-155.png" alt="blablabla" />
     <h3>blog title</h3>
     <BlogContent {Content} />
   </div>
